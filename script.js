@@ -4,9 +4,9 @@ Innym sposobem jest użycie metody concat albo join, ale co jeśli nie moglibyś
 Twoim zadaniem będzie stworzenie dwóch zmiennych z wartościami Hello oraz World, 
 a następnie połączenie ich metodą inną niż wymienione powyżej. */
 
-const = 'Hello';
-const = 'World';
-console.log('${Hello} ${World}')
+const a = 'Hello';
+const b = 'World';
+console.log('${a} ${b}')
 
 /*Zadanie drugie
 
@@ -34,7 +34,8 @@ average(1, 3, 6, 6) // 4
 Skorzystaj z rest parameters! Funkcję stwórz za pomocą arrow function.
 */
 /*Zadanie czwarte
-Stwórz tablicę z ocenami const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1], a następnie w umiejętny sposób przekaż oceny do funkcji average tak, aby otrzymać wynik. Skorzystaj z operatora spread!
+Stwórz tablicę z ocenami const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1], a następnie w umiejętny sposób przekaż oceny do funkcji 
+average tak, aby otrzymać wynik. Skorzystaj z operatora spread!
 */
 /*Zadanie piąte
 Podczas pracy nad projektem natknąłeś się na bardzo dziwną strukturę danych - [1, 4, 'Iwona', false, 'Nowak']. 
