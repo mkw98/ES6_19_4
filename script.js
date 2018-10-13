@@ -34,12 +34,18 @@ average(1, 3) // 2
 average(1, 3, 6, 6) // 4
 Skorzystaj z rest parameters! Funkcję stwórz za pomocą arrow function.
 */
+
 /*Zadanie czwarte
 Stwórz tablicę z ocenami const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1], a następnie w umiejętny sposób przekaż oceny do funkcji 
 average tak, aby otrzymać wynik. Skorzystaj z operatora spread!
 */
+
 /*Zadanie piąte
 Podczas pracy nad projektem natknąłeś się na bardzo dziwną strukturę danych - [1, 4, 'Iwona', false, 'Nowak']. 
 Twoim zadaniem jest skorzystanie z destrukturyzacji w celu wyciągnięcia z tablicy zmiennych firstname oraz lastname.
 
 */
+const data = [1, 4, 'Iwona', false, 'Nowak']
+const [, , firstname, , lastname] = data;
+
+console.log(`${firstname} ${lastname}`);
