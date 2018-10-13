@@ -21,8 +21,9 @@ Chcemy, aby wynik takiego wywołania był również prawidłowy - możesz zało�
 ma on zostać zastąpiony 1. Nie wolno korzystać z instrukcji warunkowych! Funkcję stwórz za pomocą arrow function.
 */
 
-multiply (a, b=1) => {a * b }
+let multiply = (a, b = 1) => {return a * b}
 console.log(multiply(5));
+console.log(multiply(2,5));
 
 /*Zadanie trzecie
 Napisz funkcję average, która obliczy średnią arytmetyczną wszystkich argumentów, które zostaną do niej przekazane. 
