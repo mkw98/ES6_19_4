@@ -45,7 +45,11 @@ console.log(average(1, 3, 17, 18));
 Stwórz tablicę z ocenami const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1], a następnie w umiejętny sposób przekaż oceny do funkcji 
 average tak, aby otrzymać wynik. Skorzystaj z operatora spread!
 */
+const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1]
+const total = (args) => args.reduce((a, b) => a + b);
+const average = (...args) => {return total(args) / args.length};
 
+console.log(average(...grades))
 /*Zadanie piąte
 Podczas pracy nad projektem natknąłeś się na bardzo dziwną strukturę danych - [1, 4, 'Iwona', false, 'Nowak']. 
 Twoim zadaniem jest skorzystanie z destrukturyzacji w celu wyciągnięcia z tablicy zmiennych firstname oraz lastname.
