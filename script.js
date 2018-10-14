@@ -34,8 +34,10 @@ average(1, 3) // 2
 average(1, 3, 6, 6) // 4
 Skorzystaj z rest parameters! Funkcję stwórz za pomocą arrow function.
 */
-const total = (args) => args.reduce((a, b) => a + b);
-const average = (...args) => {return total(args) / args.length};
+//const total = (args) => args.reduce((a, b) => a + b);
+//const average = (...args) => {return total(args) / args.length};
+//wersja skrócona:
+const average = (...args) => args.reduce((a, b) => a + b) / args.length;
 
 console.log(average(1));
 console.log(average(1, 3));
@@ -45,9 +47,12 @@ console.log(average(1, 3, 17, 18));
 Stwórz tablicę z ocenami const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1], a następnie w umiejętny sposób przekaż oceny do funkcji 
 average tak, aby otrzymać wynik. Skorzystaj z operatora spread!
 */
+//const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1]
+//const total = (args) => args.reduce((a, b) => a + b);
+//const average = (...args) => {return total(args) / args.length};
+//Wersja skrócona:
 const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1]
-const total = (args) => args.reduce((a, b) => a + b);
-const average = (...args) => {return total(args) / args.length};
+const average = (...args) => args.reduce((a, b) => a + b) / args.length;
 
 console.log(average(...grades))
 /*Zadanie piąte
